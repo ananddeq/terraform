@@ -48,11 +48,3 @@ resource "aws_route_table_association" "public_01_RT_ass" {
   route_table_id = aws_route_table.public_RT.id
 }
 
-output "vpc-id" {
-    value = aws_vpc.project-vpc.id
-}
-
-output "vpc-id" {
-    value = aws_subnet.subnet-1.id
-}
-  
