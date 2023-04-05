@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 module "network" {
-  source = "./network"
+  source = "../network"
 }
 
 module "ec2-server" {
-  source = "./ec2"
+  source = "../ec2"
   vpc-id = module.network.vpc_id
   subnet-id = module.network.subnet_id
 }
