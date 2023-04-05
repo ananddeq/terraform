@@ -17,7 +17,7 @@ sudo apt-get install -y docker.io
 sudo docker run hello-world
   EOF
   tags = {
-    Name = "demo-server"
+    Name = var.instance_name
   }
 }
 

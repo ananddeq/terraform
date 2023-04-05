@@ -21,3 +21,7 @@ variable "vpc-id" {
   type = string
   description = "vpc for ec2 instance"
 }
+variable "instance_name" {
+  default = "demo"
+  type = string
+}
